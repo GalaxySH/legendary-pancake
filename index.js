@@ -145,7 +145,7 @@ client.on("message", async (message) => {
                             {
                                 color: 16750899,
                                 name: "Reason",
-                                value: `${message.content.split(" ").splice(0, 1).join(" ") || "none"}`
+                                value: `${message.content.split(" ").slice(1).join(" ") || "none"}`
                             }
                         ]
                     }
@@ -168,7 +168,7 @@ client.on("message", async (message) => {
                             {
                                 color: 16711680,
                                 name: "Reason",
-                                value: `${message.content.split(" ").splice(0, 1).join(" ") || "none"}`
+                                value: `${message.content.split(" ").slice(1).join(" ") || "none"}`
                             }
                         ]
                     }
