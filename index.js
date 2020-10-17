@@ -74,10 +74,10 @@ client.on("message", async (message) => {
         let appChannel = appGuild.channels.cache.find(cha => cha.name === `applic-${message.author.id}`);
         if (appChannel) {
             let appChannel = appGuild.channels.cache.find(cha => cha.name == `applic-${message.author.id}`);
-            await appChannel.send(`**Applicant** ▚ ${message.content}`).catch(xlg.error);
+            await appChannel.send(`**Applicant** ▚\n${message.content}`).catch(xlg.error);
             await appLog.send({
                 embed: {
-                    color: info_color,
+                    color: log_color,
                     description: `${message.author} added to their application (${appChannel})`
                 }
             }).catch(xlg.error);
