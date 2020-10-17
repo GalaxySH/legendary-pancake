@@ -56,7 +56,7 @@ client.on("message", async (message) => {
         appCat = await appGuild.channels.create("applications", { type: "category" }).catch(console.error);
     }
     // check or make applications log (by name)
-    var appLog = appGuild.channel.cache.find(ch => ch.type === "text" && ch.name === "application-log");
+    var appLog = appGuild.channels.cache.find(ch => ch.type === "text" && ch.name === "application-log");
     if (!appLog) {
         appLog = await appGuild.channels.create(`application-log`, {
             type: "text",
