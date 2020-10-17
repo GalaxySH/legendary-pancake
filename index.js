@@ -107,7 +107,7 @@ client.on("message", async (message) => {
             await appLog.send({
                 embed: {
                     color: info_color,
-                    description: `${message.atuhor} submitted an application (${appChannel})`
+                    description: `${message.author} submitted an application (${appChannel})`
                 }
             }).catch(xlg.error);
             return;
@@ -207,7 +207,7 @@ client.on("message", async (message) => {
             await appLog.send({
                 embed: {
                     color: log_color,
-                    description: `${message.author} replied to application by ${recip}`
+                    description: `${message.author} replied to application of ${recip}`
                 }
             }).catch(xlg.error);
         }
