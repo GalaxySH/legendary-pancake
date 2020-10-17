@@ -95,7 +95,7 @@ client.on("message", async (message) => {
             await message.author.send({
                 embed: {
                     color: log_color,
-                    description: `Hi, and thank you for submitting an application with me. While you wait for a staff member to review your application, **please make sure you have everything in our application requirements**; requirements can be found in ${appGuild.channels.cache.get("765263778157690890") || "#apply"}. If you wish to add something to your application, please just send another dm to me.`,
+                    description: `Hi, and thank you for submitting an application with me. Your message will be used as your application and has been sent.\n\nWhile you wait for a staff member to review your application, **please make sure you have everything in the checklist**. Application requirements can also be found in ${appGuild.channels.cache.get("765263778157690890") || "#apply"}.\n\nIf you wish to add something to your application, please just send another dm to me.`,
                     fields: [
                         {
                             name: "Checklist",
