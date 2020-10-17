@@ -78,7 +78,7 @@ client.on("message", async (message) => {
             await appLog.send({
                 embed: {
                     color: info_color,
-                    description: `${message.atuhor} added to their application (${appChannel})`
+                    description: `${message.author} added to their application (${appChannel})`
                 }
             }).catch(xlg.error);
             return;
