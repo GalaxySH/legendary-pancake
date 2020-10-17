@@ -154,7 +154,7 @@ client.on("message", async (message) => {
                 await appLog.send({
                     embed: {
                         color: log_color,
-                        description: `Application by ${recip} **closed** by ${message.author}`
+                        description: `Application of ${recip} **closed** by ${message.author}`
                     }
                 }).catch(xlg.error);
                 return;
@@ -177,7 +177,7 @@ client.on("message", async (message) => {
                 await appLog.send({
                     embed: {
                         color: log_color,
-                        description: `Application by ${recip} **rejected** by ${message.author}`
+                        description: `Application of ${recip} **rejected** by ${message.author}`
                     }
                 }).catch(xlg.error);
                 return;
@@ -194,7 +194,7 @@ client.on("message", async (message) => {
                 await appLog.send({
                     embed: {
                         color: log_color,
-                        description: `Application by ${recip} **accepted** by ${message.author}`
+                        description: `Application of ${recip} **accepted** by ${message.author}`
                     }
                 }).catch(xlg.error);
                 return;
